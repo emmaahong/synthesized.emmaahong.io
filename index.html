@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    
+    <!--   META + TITLE -->
+    <title>home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel= "icon" href="img/icon.png">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <!-- CSS STYLESHEET -->
+        <link rel="stylesheet" href="style.css">
+    <!--   FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+    <!--   NAV -->
+        <nav class="navbar sticky-top navbar-expand-sm navbar-light">
+            <div class="container-fluid" >
+                <a class="navbar-brand" href="#">synthesized</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
+                    aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarID">
+                    <ul class="navbar-nav d-lg-flex align-items-center">
+                        <li><a id = "nav-link" class="nav-link active" aria-current="page" href="index.html">home</a></li>
+
+                        <li><a id = "nav-link" class="nav-link active" aria-current="page" href="about.html">about</a></li>
+
+                        <li><a id = "nav-link" class="nav-link active" aria-current="page" href="news.html">news</a></li>
+
+                        <li><a id = "nav-link" class="nav-link active" aria-current="page" href="gallery.html">gallery</a></li>
+                        
+
+                        <li class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="exploreMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                explore
+                            </button>
+
+                            <div class="dropdown-menu" aria-labelledby="exploreMenu">
+                                <a class="dropdown-item" href="style_guide.html">style guide</a>
+                                <a class="dropdown-item" href="origins.html">origins of haute couture</a>
+                                <a class="dropdown-item" href="current.html">current haute couture</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+    <!--   CONTENT -->  
+
+        <div id = 'home-1' class="container-fluid">
+
+            <div id='home-home'>
+                <h1 id = 'home-title'>a little adventure into the world of fashion.</h1> 
+
+                <div class="hover-img">
+                    <img src="img/dior_ss23_home.jpg" alt="dior ss23" class="hover-img-img">
+                    <div class="hover-img-overlay hover-img-overlay--blur">
+                        <div class="hover-img-text">Dior SS23</div>
+                    </div>
+                </div>
+                
+
+            </div>
+
+            <div class='row' id='home-row-1'>
+                <div class='col-sm' >
+                    <p id = 'home-text'>fashion is a misunderstood art form. through commercialization and the commodification of fashion, the value behind each piece has dwindled.</p> 
+                </div>
+                <div class='col-sm'>
+                    <p id = 'home-text'>this website features curated picks of the latest trends and styles, historical information, and personalized suggestions produced from a style guide quiz to help you discover your style.</p> 
+                </div>
+                <div class='col-sm'>
+                    <p id = 'home-text'>fashion is all about you. what you like, what pleases your eye, what fits your personal aesthetic. to many, it is self-expression. how you show yourself to the world.</p> 
+                </div>
+            </div>
+
+            <div class='row' id='home-row-2'>
+                <div class='col-sm' >
+                    <div class="hover-img">
+                        <img src="img/devilmorin_aw22_1.webp" alt="de vilmorin aw22" class="hover-img-img">
+                        <div class="hover-img-overlay hover-img-overlay--blur">
+                            <div class="hover-img-text">De Vilmorin AW22</div>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-sm'>
+                    <div class="hover-img">
+                        <img src="img/kawakubo_ss17_1.webp" alt="kawakubo ss17" class="hover-img-img">
+                        <div class="hover-img-overlay hover-img-overlay--blur">
+                            <div class="hover-img-text">Kawakubo SS17</div>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-sm'>
+                    <div class="hover-img">
+                        <img src="img/devilmorin_aw22_2.webp" alt="devilmorin aw22" class="hover-img-img">
+                        <div class="hover-img-overlay hover-img-overlay--blur">
+                            <div class="hover-img-text">De Vilmorin AW22</div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            
+        </div>
+
+        <div id = 'home-2' class="container-fluid">
+            
+        </div>
+
+    
+
+    
+    <script src="script.js"></script>
+
+    </body>
+
+</html>

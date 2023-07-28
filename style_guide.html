@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+<!--   META + TITLE -->
+  <title>style guide</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel= "icon" href="img/icon.png">
+
+<!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+<!-- CSS STYLESHEET -->
+    <link rel="stylesheet" href="style.css">
+<!--   FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+
+</head>
+
+  <body>
+  <!--   NAV -->
+        <nav class="navbar sticky-top navbar-expand-sm navbar-light">
+            <div class="container-fluid" >
+                <a class="navbar-brand" href="#">synthesized</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
+                    aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarID">
+                      <ul class="navbar-nav d-lg-flex align-items-center">
+                          <li><a id = "nav-link" class="nav-link active" aria-current="page" href="index.html">home</a></li>
+
+                          <li><a id = "nav-link" class="nav-link active" aria-current="page" href="about.html">about</a></li>
+
+                          <li><a id = "nav-link" class="nav-link active" aria-current="page" href="news.html">news</a></li>
+
+                          <li><a id = "nav-link" class="nav-link active" aria-current="page" href="gallery.html">gallery</a></li>
+                          
+
+                          <li class="dropdown">
+                              <button class="btn btn-secondary dropdown-toggle" type="button" id="exploreMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                explore
+                              </button>
+
+                              <div class="dropdown-menu" aria-labelledby="exploreMenu">
+                                  <a class="dropdown-item" href="style_guide.html">style guide</a>
+                                  <a class="dropdown-item" href="origins.html">origins of haute couture</a>
+                                  <a class="dropdown-item" href="current.html">current haute couture</a>
+                                  <a class="dropdown-item" href="results.html">your style</a>
+                              </div>
+                          </li>
+                      </ul>
+                </div>
+            </div>
+        </nav>
+  
+
+  <!--   CONTENT -->
+    <div id = 'sg-1' class="container-fluid">
+      <h1 id ='sg-title'>FIND YOUR STYLE.</h1>      
+      <h3 id = 'sg-text'>everyone has their personal style. find yours.</h3>  
+        
+      <form class="sg-quiz" method = "get">
+        <section class='sg-question'>
+          <h3 class='sg-question-title'>What is your name?</h3>
+          <input type="text" class="name" id="name">
+        </section>
+        <section class='sg-question' id='sg-q1'>
+          <h3 class='sg-question-title'>1. Which describes the best day off?</h3>
+          <div class="sg-options">
+            <div class="sg-option">
+              <input type="radio" id="sg-q1-o1" class="sg-option-option" name="sg-q1" value='2'>
+              <label class="sg-option-label" for="sg-q1-o1">&nbsp;Day on the beach with my best friends!</label>
+            </div>
+            <div class="sg-option">
+              <input type="radio" id="sg-q1-o2" class="sg-option-option" name="sg-q1" value='4'>
+              <label class="sg-option-label" for="sg-q1-o2" >&nbsp;Spa day alone, curled up with a good book and some green tea</label>
+            </div>
+            <div class="sg-option">
+              <input type="radio" id="sg-q1-o3" class="sg-option-option" name="sg-q1" value='10'>
+              <label class="sg-option-label" for="sg-q1-o3" >&nbsp;Sitting on the couch all day, watching movies, ordering takeout</label>
+            </div>
+            <div class="sg-option">
+              <input type="radio" id="sg-q1-o4" class="sg-option-option" name="sg-q1">
+              <label class="sg-option-label" for="sg-q1-o4" >&nbsp;Workout, catch-up on work, getting dinner with friends, going out!</label>
+            </div>
+          </div>
+        </section>
+        <section class='sg-question' id='sg-q2'>
+          <h3 class='sg-question-title'>2. Who is your style idol?</h3>
+          <div class="sg-options">
+            <div class="sg-option">
+              <input type="radio" id="sg-q2-o1" class="sg-option-option" name="sg-q2" value='6'>
+              <label class="sg-option-label" for="sg-q2-o1" >&nbsp;Emma Chamberlain</label>
+            </div>
+            <div class="sg-option">
+              <input type="radio" id="sg-q2-o2" class="sg-option-option" name="sg-q2">
+              <label class="sg-option-label" for="sg-q2-o2" >&nbsp;A$AP Rocky</label>
+            </div>
+            <div class="sg-option">
+              <input type="radio" id="sg-q2-o3" class="sg-option-option" name="sg-q2" value='10'>
+              <label class="sg-option-label" for="sg-q2-o3" >&nbsp;Vivienne Westwood</label>
+            </div>
+            <div class="sg-option">
+              <input type="radio" id="sg-q2-o4" class="sg-option-option" name="sg-q2" value='2'>
+              <label class="sg-option-label" for="sg-q2-o4" >&nbsp;Princess Diana</label>
+            </div>
+          </div>
+        </section>
+
+        <section class='sg-question' id='sg-q3'>
+          <h3 class='sg-question-title'>3. You would prefer to live in...</h3>
+          <div class="sg-options">
+            <div class="sg-option">
+              <input type="radio" id="sg-q3-o1" class="sg-option-option" name="sg-q3" value='2'>
+              <label class="sg-option-label" for="sg-q3-o1" >&nbsp;A 17th century castle in the south of France</label>
+            </div>
+            <div class="sg-option">
+              <input type="radio" id="sg-q3-o2" class="sg-option-option" name="sg-q3"value='5'>
+              <label class="sg-option-label" for="sg-q3-o2" >&nbsp;A high-rise penthouse near Wall Street in Manhattan</label>
+            </div>
+            <div class="sg-option">
+              <input type="radio" id="sg-q3-o3" class="sg-option-option" name="sg-q3" value='8'>
+              <label class="sg-option-label" for="sg-q3-o3" >&nbsp;A suburban mid-century modern mansion </label>
+            </div>
+            <div class="sg-option">
+              <input type="radio" id="sg-q3-o4" class="sg-option-option" name="sg-q3" value='10'>
+              <label class="sg-option-label" for="sg-q3-o4" >&nbsp; Nowhere! I'm a nomad... I live everywhere!</label>
+            </div>
+          </div>
+        </section>
+
+        <section class='sg-question' id='sg-q4'>
+          <h3 class='sg-question-title'>4. You like to do your makeup...</h3>
+          <div class="sg-options">
+            <div class="sg-option">
+              <input type="radio" id="sg-q4-o1" class="sg-option-option" name="sg-q4" value='2'>
+              <label class="sg-option-label" for="sg-q4-o1" >&nbsp;Full glam! Glitter eyes, rosy cheeks, lashes... </label>
+            </div>
+            <div class="sg-option">
+              <input type="radio" id="sg-q4-o2" class="sg-option-option" name="sg-q4" value='10'>
+              <label class="sg-option-label" for="sg-q4-o2" >&nbsp;Dark and smoky - dark red lip, eyeliner, and a smoky eye.</label>
+            </div>
+            <div class="sg-option">
+              <input type="radio" id="sg-q4-o3" class="sg-option-option" name="sg-q4" value='4'>
+              <label class="sg-option-label" for="sg-q4-o3" >&nbsp;Light. Dewy skincare, lightweight makeup, and a bit of lip balm is all I need.</label>
+            </div>
+            <div class="sg-option">
+              <input type="radio" id="sg-q4-o4" class="sg-option-option" name="sg-q4" value='8'>
+              <label class="sg-option-label" for="sg-q4-o4" >&nbsp; Colourful! Every day, I switch it up - new colours, new styles!</label>
+            </div>
+          </div>
+        </section>
+
+        <section class='sg-question' id='sg-q5'>
+          <a href="https://fhcm.paris/en/haute-couture-2/" class="sg-link"><h3 class='sg-question-title'>5. Favourite haute couture fashion house?</h3></a>
+          <div class="sg-options">
+            <div class="sg-option">
+              <input type="radio" id="sg-q5-o1" class="sg-option-option" name="sg-q5" value='2'>
+              <label class="sg-option-label" for="sg-q5-o1" >&nbsp;Dior, Chanel, Givenchy.</label>
+            </div>
+            <div class="sg-option">
+              <input type="radio" id="sg-q5-o2" class="sg-option-option" name="sg-q5" value='4'>
+              <label class="sg-option-label" for="sg-q5-o2" >&nbsp;Schiaparelli, Giambattista Valli!.</label>
+            </div>
+            <div class="sg-option">
+              <input type="radio" id="sg-q5-o3" class="sg-option-option" name="sg-q5" value='10'>
+              <label class="sg-option-label" for="sg-q5-o3" >&nbsp;Maison Margiela, Jean Paul Gaultier.</label>
+            </div>
+            <div class="sg-option">
+              <input type="radio" id="sg-q5-o4" class="sg-option-option" name="sg-q5" value='8'>
+              <label class="sg-option-label" for="sg-q5-o4" >&nbsp; Fendi, Balenciaga</label>
+            </div>
+          </div>
+        </section>
+
+        <section class='sg-question' id='sg-q6'>
+          <h3 class='sg-question-title'>6. What do you order at a cafe?</h3>
+          <div class="sg-options">
+            <div class="sg-option">
+              <input type="radio" id="sg-q6-o1" class="sg-option-option" name="sg-q6" value='10'>
+              <label class="sg-option-label" for="sg-q6-o1" >&nbsp;Regular coffee</label>
+            </div>
+            <div class="sg-option">
+              <input type="radio" id="sg-q6-o2" class="sg-option-option" name="sg-q6" value='2'>
+              <label class="sg-option-label" for="sg-q6-o2" >&nbsp;Vanilla oat latte</label>
+            </div>
+            <div class="sg-option">
+              <input type="radio" id="sg-q6-o3" class="sg-option-option" name="sg-q6" value='8'>
+              <label class="sg-option-label" for="sg-q6-o3" >&nbsp;Iced matcha latte</label>
+            </div>
+            <div class="sg-option">
+              <input type="radio" id="sg-q6-o4" class="sg-option-option" name="sg-q6" value='6'>
+              <label class="sg-option-label" for="sg-q6-o4" >&nbsp; Iced chai tea latte</label>
+            </div>
+          </div>
+        </section>
+
+        <section class='sg-question' id='sg-q7'>
+          <h3 class='sg-question-title'>7. What is your favourite season?</h3>
+          <div class="sg-options">
+            <div class="sg-option">
+              <input type="radio" id="sg-q7-o1" class="sg-option-option" name="sg-q7" value='10'>
+              <label class="sg-option-label" for="sg-q7-o1" >&nbsp;Winter</label>
+            </div>
+            <div class="sg-option">
+              <input type="radio" id="sg-q7-o2" class="sg-option-option" name="sg-q7" value='2'>
+              <label class="sg-option-label" for="sg-q7-o2" >&nbsp;Summer</label>
+            </div>
+            <div class="sg-option">
+              <input type="radio" id="sg-q7-o3" class="sg-option-option" name="sg-q7" value='6'>
+              <label class="sg-option-label" for="sg-q7-o3" >&nbsp;Spring</label>
+            </div>
+            <div class="sg-option">
+              <input type="radio" id="sg-q7-o4" class="sg-option-option" name="sg-q7" value='5'>
+              <label class="sg-option-label" for="sg-q7-o4" >&nbsp; Fall</label>
+            </div>
+          </div>
+        </section>
+
+        <section class='sg-question' id='sg-q8'>
+          <h3 class='sg-question-title'>8. Which meal sounds the most appealing to you?</h3>
+          <div class="sg-options">
+            <div class="sg-option">
+              <input type="radio" id="sg-q8-o1" class="sg-option-option" name="sg-q8" value='2'>
+              <label class="sg-option-label" for="sg-q8-o1" >&nbsp;Chicken alfredo with fresh bread</label>
+            </div>
+            <div class="sg-option">
+              <input type="radio" id="sg-q8-o2" class="sg-option-option" name="sg-q8" value='6'>
+              <label class="sg-option-label" for="sg-q8-o2" >&nbsp;Fresh ramen noodles and a side of gyoza</label>
+            </div>
+            <div class="sg-option">
+              <input type="radio" id="sg-q8-o3" class="sg-option-option" name="sg-q8" value='10'>
+              <label class="sg-option-label" for="sg-q8-o3" >&nbsp;McDonalds burger</label>
+            </div>
+            <div class="sg-option">
+              <input type="radio" id="sg-q8-o4" class="sg-option-option" name="sg-q8" value='9'>
+              <label class="sg-option-label" for="sg-q8-o4" >&nbsp; 8-course chef-designed tasting menu</label>
+            </div>
+          </div>
+        </section>
+
+        <section class='sg-question' id='sg-q5'>
+          <h3 class='sg-question-title'>9. Quick! Your house is burning. What are you taking with you?</h3>
+          <div class="sg-options">
+            <div class="sg-option">
+              <input type="radio" id="sg-q9-o1" class="sg-option-option"name="sg-q9" value='4'>
+              <label class="sg-option-label" for="sg-q9-o1" >&nbsp;Wallet, computer, hard drives, important documents.</label>
+            </div>
+            <div class="sg-option">
+              <input type="radio" id="sg-q9-o2" class="sg-option-option"name="sg-q9" value='2'>
+              <label class="sg-option-label" for="sg-q9-o2" >&nbsp;The family photo album</label>
+            </div>
+            <div class="sg-option">
+              <input type="radio" id="sg-q9-o3" class="sg-option-option"name="sg-q9" value='10'>
+              <label class="sg-option-label" for="sg-q9-o3" >&nbsp;As many things as you can grab on your way out!</label>
+            </div>
+            <div class="sg-option">
+              <input type="radio" id="sg-q9-o4" class="sg-option-option" name="sg-q9" value='6'>
+              <label class="sg-option-label" for="sg-q9-o4" >&nbsp; Your phone, a phone charger, a blanket, and a first aid kit.</label>
+            </div>
+          </div>
+        </section>
+
+        <section class='sg-question' id='sg-q5'>
+          <h3 class='sg-question-title'>10. Laaaast question. If you could be any animal, what would it be?</h3>
+          <div class="sg-options">
+            <div class="sg-option">
+              <input type="radio" id="sg-q10-o1" class="sg-option-option" name="sg-q10" value='2'>
+              <label class="sg-option-label" for="sg-q10-o1" >&nbsp;A lion.</label>
+            </div>
+            <div class="sg-option">
+              <input type="radio" id="sg-q10-o2" class="sg-option-option" name="sg-q10" value='10'>
+              <label class="sg-option-label" for="sg-q10-o2" >&nbsp;A whale.</label>
+            </div>
+            <div class="sg-option">
+              <input type="radio" id="sg-q10-o3" class="sg-option-option" name="sg-q10" value='7'>
+              <label class="sg-option-label" for="sg-q10-o3" >&nbsp;A dog!</label>
+            </div>
+            <div class="sg-option">
+              <input type="radio" id="sg-q10-o4" class="sg-option-option" name="sg-q10" value='3'>
+              <label class="sg-option-label" for="sg-q10-o4" >&nbsp;An eagle.</label>
+            </div>
+          </div>
+        </section>
+
+        <button id='sg-submit' onclick="calc_score()">Submit Quiz</button>
+
+        <div id="sg-results-notif">
+          <h3 id="sg-results-notif-text"></h3>
+          <a id="sg-results-notif-link"></a>
+        </div>
+        
+      </form>
+    </div>
+
+    
+
+    
+    <script src="script.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,6 @@
+<div class="hover-img">
+    <img src="img/dior_ss23_home.jpg" alt="dior ss23" class="hover-img-img">
+    <div class="hover-img-overlay hover-img-overlay--blur">
+        <div class="hover-img-text">Dior SS23</div>
+    </div>
+</div>
